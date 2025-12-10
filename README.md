@@ -2,6 +2,7 @@
 
 ## Project description
 ### 🧑‍💻 Personal Portfolio Website
+website link: 
 
 This is my personal portfolio website built using **HTML**, **CSS**, and **JavaScript**.  
 It highlights who I am, the projects I've created, and the skills I've learned — all within a clean, responsive, and interactive layout.  
@@ -49,3 +50,4 @@ AI tools were used throughout this project to:
 - Generate and refine written content, including website text and descriptions  
 
 AI assistance helped streamline development and improve the website’s overall quality, usability, and user experience.
+
