@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- //making the viewpoint adjust for ant type of devise -->
+<meta name="viewport" content="width=device-width, inital-scale=1.0">
+<title> Ghada alghamdi Personal website</title>
+ <!-- // adding a title for the web name -->
+<link rel="stylesheet" href="css/styles.css"> 
+<!-- //linking css and js -->
+</head>
+<body>
+    <div class="nav" style="background-color: #cee9d4;"> 
+        <!-- //adding the backgroun image -->
+        <h2>Ghada Alghamdi</h2>
+        <div id="btn"> 
+        <!-- // a bloke to use flec boxs and move the btn to the opesite side from the h1 -->
+        <!-- //links to move around the page -->
+        <a href="#about_me">About</a>
+        <a href="#box-model">Projucts</a>
+        <a href="#Contact">Contact</a>
+        <!-- //adding a link for my linkdein page -->
+        </div>
+    </div>
+        <section id="about_me">
+         <img src="assets/images/profile.png" alt="Profaile photo" width="200px" height="150px">
+          <!-- //puting the profile img -->
+        <h1>About Me</h1>
+        <!-- // an introuduction -->
+        <P>I am a junior Computer Science student at KFUPM <br>with a strong passion for technology and continuous learning. <br>I am constantly seeking new challenges and opportunities that allow me to <br>enhance my technical skills, broaden my knowledge, and apply what I learn<br> in practical, real-world scenarios. My goal is to keep growing both academically <br>and professionally while contributing to innovative projects in the technology field.</P>
+        <a id ="linkedin" href="https://www.linkedin.com/in/ghdah-alghamdi-164294276?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app">Linkedin</a>
+        </section>
+    <!-- // makeing abox mode to have my proujucts (for the outer format) -->
+     <section id="box-model" class="card"> 
+     <h1>Projects:</h1>
+      <div class="fillter_btn"><!-- adding the buttons to allow the user to choose a project catagorue (each button has a data name of the catagoure)-->
+            <button id="all" class="all" data-name="all"> All Projucts</button>
+            <button id="Web_Devalpment" data-name="Web_Devalpment">Web Devalpment</button>
+            <button id="Hardwarye_Design" data-name="Hardwarye_Design">Hardwarye Design</button>
+            <button id="System" data-name="System">System</button>
+        </div>
+        <br>
+     <div class="box-row">
+          <!-- //deviding them to 3 boxses each contine img title and description  and data name of the type of the projuect to use in fillter -->
+            <div class="box b1" data-name="Hardwarye_Design"> 
+                <img src="assets\images\CPU.png" alt="CPU" width="200px" height="80px">
+                <h3>Bulding a CPU</h3>
+                <button id="show1">Show Discraption</button>
+                <p id="Discraption"class="hide">Designed and implemented a basic CPU from scratch, focusing on the core components such as the control unit, ALU, registers, and memory interactions.</p>
+            </div>
+            <div class="box b2" data-name="Web_Devalpment">
+                <img src="assets\images\Event.png" alt="EMA" width="150px" height="100px">
+                <h3>Event mangment App</h3>
+                <button id="show2">Show Discraption</button>
+                <p id="Discraption2"class="hide">Developed a user-friendly application that streamlines the process of planning and managing events.</p>
+            </div>
+            <div class="box b3" data-name="System">
+                <img src="assets\images\Gogreen.png" alt="GoGrren app" width="150px" height="100px">
+                <h3>GoGrren app</h3>
+                <button id="show3">Show Discraption</button>
+                <p id="Discraption3"class="hide">Developed a mobile application that helps users identify the “greenest” paths in their city by analyzing environmental factors such as air quality</p>
+            </div>
+        </div>
+</section>
+ <section id="box-model2" class="card">
+  <h1>Programing Languages:</h1>
+  <!-- adding the buttons to allow the user to choose a language based on level (each radio button has a data name of the level)-->
+  <div class="fillter_btn2">
+    <input type="radio" id="all" name="level" value="all" checked>
+    <label for="all">All</label>
+
+    <input type="radio" id="Beginner" name="level" value="Beginner">
+    <label for="Beginner">Beginner</label>
+
+    <input type="radio" id="Intermediate" name="level" value="Intermediate">
+    <label for="Intermediate">Intermediate</label>
+
+    <input type="radio" id="Advanced" name="level" value="Advanced">
+    <label for="Advanced">Advanced</label>
+  </div>
+
+  <br>
+<!-- making boxses for every language with data-name for filltering based on user choise -->
+  <div class="box-row2">
+    <div class="box2 t2" data-name="Intermediate"><h5>Verilog</h5></div>
+    <div class="box2 t2" data-name="Intermediate"><h5>MARS</h5></div>
+    <div class="box2 t2" data-name="Advanced"><h5>Logisim</h5></div>
+    <div class="box2 t2" data-name="Beginner"><h5>Python</h5></div>
+    <div class="box2 t2" data-name="Beginner"><h5>MATLAB</h5></div>
+    <div class="box2 t2" data-name="Intermediate"><h5>RStudio</h5></div>
+    <div class="box2 t2" data-name="Advanced"><h5>Java</h5></div>
+    <div class="box2 t2" data-name="Advanced"><h5>SQL</h5></div>
+    <div class="box2 t2" data-name="Intermediate"><h5>JavaScript</h5></div>
+    <div class="box2 t2" data-name="Advanced"><h5>HTML</h5></div>
+    <div class="box2 t2" data-name="Intermediate"><h5>CSS</h5></div>
+    <div class="box2 t2" data-name="Intermediate"><h5>assmbly</h5></div>
+  </div>
+</section>
+         <section id="Contact">
+            <form action="#" method="post" class="card2"><!-- creating a forme and makeing the class card2 for the outeer format (in css)-->
+                <h2>Contact Me:</h2>
+                <label for="name">Enter your name: </label>
+                <!-- //the Quation -->
+                <input id="name" name="name" type="text" placeholder="Name" required><br>
+                <!-- //creating a space to put the answer and required for validation -->
+                <label for="email">Enter your email: </label>
+                <!-- //the Quation -->
+                <input id="email" name="email" type="email" placeholder="Email" required><br>
+                <!-- //creating a space to put the answer and making the type emaile and required for validation  -->
+                <div id="message_block">
+                    <label for="message">Your message:</label><br>
+                    <!-- //the Quation -->
+                     <textarea id="message" name="message" rows="6" required></textarea>
+                     <!-- //creating a space to put the answer but here i'm also adding rows to make the text box bigger
+                      and required for validation -->
+                </div>
+                <button type="submit" id="submite">Submit</button> 
+                <!-- // making a button with the type submit for the form -->
+            </form>
+        </section>
+        <hr>
+        <section>
+        <br>
+        <div class="box-row">
+            <div class="box b4"> 
+                <h2>Cats facts for cat lovers 🐱:</h2>
+                <p id="fact" style="margin-top:15px; color:#3a5246;"></p> <!-- making the <p> that i will change insaide JS with data from public API-->
+                <p style="color:#b2c8b7;">Click the button to see a random cat fact every time.</p>
+                <button id="cat">Meow</button>
+            </div>
+        </div>
+        </section>
+        <div id="them">
+         <button id="them-btn"><!-- Adding icons for a bitton to cahnge between light and dark mode-->
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M480-360q50 0 85-35t35-85q0-50-35-85t-85-35q-50 0-85 35t-35 85q0 50 35 85t85 35Zm0 80q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Zm326-268Z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Zm0-80q88 0 158-48.5T740-375q-20 5-40 8t-40 3q-123 0-209.5-86.5T364-660q0-20 3-40t8-40q-78 32-126.5 102T200-480q0 116 82 198t198 82Zm-10-270Z"/></svg>
+        </button>
+        </div>
+        <script src="js/script.js" defer></script>
+</body>
+</html>
+
+
